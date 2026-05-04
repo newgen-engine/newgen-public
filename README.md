@@ -86,6 +86,12 @@ This repository is used to publish:
 - filtered public reports
 - selected evidence and progress material
 
+## Public evidence
+
+Selected sanitized public evidence notes are published under:
+
+- `evidence/001-l1-runtime-progress.md`
+
 ## What this repository does not publish
 
 This repository does **not** publish:
