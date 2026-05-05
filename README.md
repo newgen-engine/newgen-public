@@ -2,6 +2,8 @@
 
 Public documentation, project status, and technical updates for the NewGen ecosystem.
 
+Official website: https://newgenengine.com
+
 This repository does not publish source code.
 It exists as the public-facing documentation and reporting layer for the project.
 
