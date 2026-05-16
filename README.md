@@ -72,11 +72,13 @@ A premium model with certified results is also part of the broader NewGen direct
 
 ## Current public positioning
 
-Current public maturity is not uniform across the three ecosystems.
+NewGen V1 is currently in final regression validation after recent hardening work across follower access, reputation, policy configuration, E2 admission, and packaging.
 
-- **NewGen L1**: core development substantially completed; final low-risk refinements and validation still ongoing
-- **E2 Compute Hub**: core development substantially completed; final low-risk refinements and validation still ongoing
-- **NewGen AI**: proprietary stack already built at the infrastructure and pipeline level; token generation, corpus preparation, and model-building stages are still progressing
+Current public maturity is not uniform across the three ecosystems:
+
+- **NewGen L1:** core runtime already built and repeatedly tested in local/lab/server environments, including multi-thousand-block runs. Current work focuses on regression validation after final hardening.
+- **E2 Compute Hub:** coordinator/worker flows are built and have completed controlled job execution tests. Current work focuses on validating canonical L1-based worker eligibility, admission, receipts, and job lifecycle behavior.
+- **NewGen AI:** application/backend/frontend layers are operational in private tests. Dataset/token preparation and model-building infrastructure are prepared; full model training and final answer-quality evaluation remain pending.
 
 ## What this repository publishes
 
