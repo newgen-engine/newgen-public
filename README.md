@@ -44,20 +44,19 @@ It is not only a generic workload orchestrator.
 
 Its architecture is designed around:
 
-commissioned workload execution
-bounded off-chain job handling
-controlled participation and admission rules
-reputation-based worker selection
-execution through the most reliable eligible nodes
-verifiable execution records and runtime evidence
-explicit separation from canonical chain authority
+- commissioned workload execution
+- bounded off-chain job handling
+- controlled participation and admission rules
+- reputation-based worker selection
+- execution through the most reliable eligible nodes
+- verifiable execution records and runtime evidence
+- explicit separation from canonical chain authority
 
 E2 is also the foundation for a broader distributed compute ecosystem where qualified nodes can expose usable compute capacity through explicit capability, policy, reputation, and lifecycle rules.
 
 The long-term direction includes Cloud Units, controlled instance access, GPU-capable workers, verifiable execution paths, runtime evidence, and decentralized compute coordination without removing canonical authority boundaries.
 
 E2 can execute workloads and expose controlled compute surfaces, but NewGen L1 remains the canonical source of truth for finality, reputation, governance, and settlement-critical state.
-
 ### NewGen AI
 
 NewGen AI is designed both as a general intelligent assistant and as an ecosystem assistant capable of interacting with blockchain, compute, and workflow systems across NewGenEngine.
