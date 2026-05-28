@@ -118,5 +118,7 @@ NewGen does not aim to publish everything. It aims to publish what is useful, ac
 
 Start with:
 
+- `vision/newgenengine-thesis.md`
 - `status/current-status.md`
 - `reports/01-project-status-update.md`
+- `evidence/001-l1-runtime-progress.md`
