@@ -60,23 +60,15 @@ E2 can execute workloads and expose controlled compute surfaces, but NewGen L1 r
 
 ### NewGen AI
 
-NewGen AI is a full proprietary artificial intelligence system built in-house.
+NewGen AI is designed both as a general intelligent assistant and as an ecosystem assistant capable of interacting with blockchain, compute, and workflow systems across NewGenEngine.
 
-It is not presented as a simple assistant.
-Its public-facing role includes:
+Its architecture is designed around explicit authority boundaries between AI, compute, and canonical chain state.
 
-- conversational interaction
-- reasoning
-- tool use
-- bounded orchestration
+The system is intended to support intelligent interaction, workflow assistance, tool usage, reasoning, and ecosystem coordination without automatically treating every AI output as canonical truth.
 
-Its internal stack already includes core proprietary components such as:
+When required, important execution paths and ecosystem interactions can be checked, reconciled, and linked to verified state and certified execution flows inside NewGenEngine itself.
 
-- tokenizer
-- run engine
-- controlled data/token pipeline
-
-A premium model with certified results is also part of the broader NewGen direction, but public material related to that layer remains intentionally limited at this stage.
+The long-term direction includes AI systems capable of operating across NewGen L1, E2 Compute Hub, and distributed compute infrastructure while remaining connected to verifiable execution and canonical state boundaries.
 
 ## Current public positioning
 
