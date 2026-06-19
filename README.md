@@ -57,6 +57,7 @@ E2 is also the foundation for a broader distributed compute ecosystem where qual
 The long-term direction includes Cloud Units, controlled instance access, GPU-capable workers, verifiable execution paths, runtime evidence, and decentralized compute coordination without removing canonical authority boundaries.
 
 E2 can execute workloads and expose controlled compute surfaces, but NewGen L1 remains the canonical source of truth for finality, reputation, governance, and settlement-critical state.
+
 ### NewGen AI
 
 NewGen AI is designed both as a general intelligent assistant and as an ecosystem assistant capable of interacting with blockchain, compute, and workflow systems across NewGenEngine.
@@ -93,7 +94,9 @@ This repository is used to publish:
 
 Selected sanitized public evidence notes are published under:
 
-- `evidence/001-l1-runtime-progress.md`
+* `evidence/001-l1-runtime-progress.md`
+* `evidence/002-l1-nodeb-clean-db-snapshot-bootstrap.md`
+
 
 ## What this repository does not publish
 
@@ -118,7 +121,10 @@ NewGen does not aim to publish everything. It aims to publish what is useful, ac
 
 Start with:
 
-- `vision/newgenengine-thesis.md`
-- `status/current-status.md`
-- `reports/01-project-status-update.md`
-- `evidence/001-l1-runtime-progress.md`
+* `vision/newgenengine-thesis.md`
+* `status/current-status.md`
+* `reports/01-project-status-update.md`
+* `evidence/001-l1-runtime-progress.md`
+* `evidence/002-l1-nodeb-clean-db-snapshot-bootstrap.md`
+
+
