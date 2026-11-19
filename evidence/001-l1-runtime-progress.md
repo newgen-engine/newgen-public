@@ -34,7 +34,7 @@ Observed values include:
 * matching finalized hash
 * empty mempool state at the time of capture
 
-![NewGen L1 runtime validation](./screen.png)
+![NewGen L1 runtime validation](./Screenshot%202026-06-09%20035721.png)
 
 This is one of the core properties NewGen L1 is designed to preserve: independent nodes converging on the same view of chain state and finality.
 
@@ -46,7 +46,7 @@ The NewGen Client Suite was started in wallet mode and configured to use the pub
 
 The package initialized successfully and launched its local HTTP interface.
 
-![NewGen Client Suite startup](./Screenshot%202026-06-09%20035721.png)
+![NewGen Client Suite startup](./Screenshot%202026-06-09ff%20043328.png)
 
 The goal of the Client Suite is to provide a simple entry point for interacting with the network without requiring users to manually configure multiple runtime components.
 
@@ -65,7 +65,7 @@ Visible information includes:
 * genesis fingerprint
 * pending transaction status
 
-![Wallet Node live status](./Screenshot%202026-06-09ff%20043328.png)
+![Wallet Node live status](./screen.png)
 
 The browser interface reads public chain state only. Transaction signing is performed outside the browser through the wallet package.
 

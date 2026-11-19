@@ -4,8 +4,9 @@ Public documentation, project status, and technical updates for the NewGen ecosy
 
 Official website: https://newgenengine.com
 
-This repository does not publish source code.
-It exists as the public-facing documentation and reporting layer for the project.
+This repository contains project documentation and reports. The historical NewGen L1 V1 source is available in a separate repository under proprietary source-inspection terms.
+
+[Inspect the V1 source](https://github.com/newgen-engine/newgen-l1-v1/tree/41f6557c45b87c7d9195b84166d4fed2d10077bd) · [Read the testnet evidence](https://github.com/newgen-engine/newgen-l1-v1/blob/41f6557c45b87c7d9195b84166d4fed2d10077bd/evidence/EVIDENCE_REPORT.md) · [Source inspection terms](https://github.com/newgen-engine/newgen-l1-v1/blob/41f6557c45b87c7d9195b84166d4fed2d10077bd/LICENSE.txt)
 
 ## What NewGen is
 
@@ -70,15 +71,12 @@ When required, important execution paths and ecosystem interactions can be check
 
 The long-term direction includes AI systems capable of operating across NewGen L1, E2 Compute Hub, and distributed compute infrastructure while remaining connected to verifiable execution and canonical state boundaries.
 
-## Current public positioning
+## Public status as of 19 November 2026
 
-NewGen V1 is currently in final regression validation after recent hardening work across follower access, reputation, policy configuration, E2 admission, and packaging.
+- **NewGen L1 V1.** After the 16 November restart, three private-testnet nodes reported height 328,559 and the same finalized block hash at height 328,558. The V1 repository contains the historical source and the underlying observations.
+- **E2 Compute Hub and NewGen AI.** The [earlier project report](reports/01-project-status-update.md) records the scope of private compute and AI testing at the time. The [E2 architecture overview](https://www.newgenengine.com/e2-compute-hub/) describes the broader compute design, including GPU-capable workers and Cloud Units.
 
-Current public maturity is not uniform across the three ecosystems:
-
-- **NewGen L1:** core runtime already built and repeatedly tested in local/lab/server environments, including multi-thousand-block runs. Current work focuses on regression validation after final hardening.
-- **E2 Compute Hub:** coordinator/worker flows are built and have completed controlled job execution tests. Current work focuses on validating canonical L1-based worker eligibility, admission, receipts, and job lifecycle behavior.
-- **NewGen AI:** application/backend/frontend layers are operational in private tests. Dataset/token preparation and model-building infrastructure are prepared; full model training and final answer-quality evaluation remain pending.
+See the [public status page](status/current-status.md) for the dated L1 observations and access information.
 
 ## What this repository publishes
 

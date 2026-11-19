@@ -1,10 +1,6 @@
 # Current Status
 
-## What this document is
-
-This page describes the current public status of the NewGen project at a high level.
-
-Its purpose is to clarify what exists today, what is currently being regression-tested, and what is not being claimed yet.
+Updated 19 November 2026. This update covers the historical NewGen L1 V1 source publication and the private-testnet observations available for inspection.
 
 ## Current project structure
 
@@ -20,19 +16,11 @@ These ecosystems are connected, but they do not share the same role or the same 
 - **E2 Compute Hub** performs bounded commissioned work and does not independently promote local execution state to canonical truth.
 - **NewGen AI** provides interaction and bounded orchestration, and is designed to become a future demand layer for the compute ecosystem while remaining constrained by explicit system boundaries and pending final model training.
 
-## Current phase
+## V1 publication
 
-NewGen V1 is currently in **final regression validation** after recent hardening work across:
+The historical NewGen L1 V1 source and selected testnet evidence were published on 18 November 2026. The original project code is available for inspection under the terms in the V1 repository. Requests for coordinated network access go through [Chain Access](https://www.newgenengine.com/chain-access/).
 
-- follower access and packaging
-- public-mode configuration
-- peer reputation and rate-limit handling
-- canonical worker eligibility
-- L1 → E2 admission boundaries
-- policy/config consistency
-- E2 coordinator/worker validation
-
-The project is no longer in early construction. Current work is focused on confirming that recent hardening changes did not introduce regressions across the already-built systems.
+[Inspect the V1 source](https://github.com/newgen-engine/newgen-l1-v1/tree/41f6557c45b87c7d9195b84166d4fed2d10077bd) · [Read the testnet evidence](https://github.com/newgen-engine/newgen-l1-v1/blob/41f6557c45b87c7d9195b84166d4fed2d10077bd/evidence/EVIDENCE_REPORT.md) · [Source inspection terms](https://github.com/newgen-engine/newgen-l1-v1/blob/41f6557c45b87c7d9195b84166d4fed2d10077bd/LICENSE.txt)
 
 ## Current public status
 
@@ -49,13 +37,14 @@ Its role includes:
 - reputation logic
 - explicit authority over what becomes canonical
 
-Current public maturity:
+### Private-testnet observations
 
-- core runtime already built
-- repeatedly tested in local/lab/server environments
-- multi-thousand-block runs already completed internally
-- follower-node access and public-mode behavior currently being regression-tested after recent hardening
-- not presented as a public mainnet yet
+| Observation | Height reported by A, B and C | Finalized height | What the records show |
+| --- | ---: | ---: | --- |
+| 8 October 2026 | 328,270 | 328,269 | Three original API captures report the same tip and finalized hash. |
+| 16 November 2026, after restart | 328,559 | 328,558 | Selected fields from the restart transcript show the same tip and finalized hash on all three nodes in the later observation. |
+
+The [evidence report](https://github.com/newgen-engine/newgen-l1-v1/blob/41f6557c45b87c7d9195b84166d4fed2d10077bd/evidence/EVIDENCE_REPORT.md) documents the capture methods, the October snapshot-export issue on node A and the limits of each observation.
 
 ### E2 Compute Hub
 
@@ -70,11 +59,11 @@ Its role includes:
 - L1-based admission boundaries
 - explicit separation from canonical chain authority
 
-Current public maturity:
+Private testing described in the [earlier project report](../reports/01-project-status-update.md):
 
 - coordinator/worker flows are built
 - controlled job execution tests have already been completed internally
-- current validation focuses on canonical L1-based worker eligibility, admission, receipts, and job lifecycle behavior
+- validation at the time focused on L1-based worker eligibility, admission, receipts and the job lifecycle
 - E2 is not yet presented as a public cloud marketplace or full decentralized Hetzner-like product
 
 ### NewGen AI
@@ -88,25 +77,17 @@ Its role includes:
 - bounded orchestration
 - future AI product demand for the compute ecosystem
 
-Current public maturity:
+Private testing described in the [earlier project report](../reports/01-project-status-update.md):
 
 - backend and frontend application layers are operational in private tests
 - chat plumbing, session/auth/database paths, and application shell have been tested
 - dataset/token preparation and model-building infrastructure are prepared
-- full model training and final answer-quality evaluation remain pending
+- the report listed full model training and final answer-quality evaluation as pending
 - NewGen AI is not being presented as a finished public AI model yet
 
-## Current validation focus
+## Earlier validation work
 
-The current validation focus is not feature expansion.
-
-The main areas being validated are:
-
-- follower node package and public-mode boot behavior
-- L1 peer stability and local reputation behavior
-- L1 → E2 canonical worker eligibility
-- E2 worker admission and job lifecycle
-- AI application shell, backend/frontend flow, and verified fail-closed behavior
+The [earlier project report](../reports/01-project-status-update.md) records the validation priorities at that stage. The June notes cover [multi-node operation and the wallet client](../evidence/001-l1-runtime-progress.md) and [Node B recovery from a clean database](../evidence/002-l1-nodeb-clean-db-snapshot-bootstrap.md).
 
 ## What is not being claimed yet
 
