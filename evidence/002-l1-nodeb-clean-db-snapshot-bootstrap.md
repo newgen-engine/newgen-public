@@ -182,6 +182,6 @@ This evidence shows that a NewGen L1 node can recover from a clean local runtime
 
 This is not a public mainnet launch claim.
 
-This is runtime evidence from the current NewGen test infrastructure.
+These observations come from the June 2026 Node B snapshot bootstrap test on the NewGen L1 test network.
 
 It does not claim open validator onboarding or third-party permissionless operation.
