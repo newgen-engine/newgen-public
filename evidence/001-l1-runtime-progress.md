@@ -1,12 +1,10 @@
 # 001 — L1 Runtime Progress
 
+> **Historical testnet evidence.** The screenshots document June 2026 validation. The earlier log entries date to 4 May 2026. [V1 evidence report for October and November 2026](https://github.com/newgen-engine/newgen-l1-v1/blob/41f6557c45b87c7d9195b84166d4fed2d10077bd/evidence/EVIDENCE_REPORT.md)
+
 ## Overview
 
-This note collects public runtime evidence from recent NewGen L1 validation work.
-
-The objective is simple: document observable behavior from a real validation run and show that NewGen L1 is progressing as a coherent distributed system under continuous operation.
-
-The evidence below focuses on:
+This note records selected observations from May and June 2026 NewGen L1 test runs.
 
 * multi-node convergence
 * finalized state progression
@@ -15,34 +13,30 @@ The evidence below focuses on:
 * peer-delivered block processing
 * snapshot activity during runtime
 
-All screenshots were captured during validation against the current NewGen test infrastructure.
-
 ---
 
 ## Runtime Validation Evidence
 
 ### Multi-Node Runtime Validation
 
-The following capture shows three independent NewGen L1 node APIs reporting aligned chain state.
-
-Observed values include:
+In the 9 June 2026 comparison, three NewGen L1 node APIs reported matching chain state on the private testnet.
 
 * identical network identifier
-* matching chain height
-* matching finalized height
+* chain height **17,103**
+* finalized height **17,102**
 * matching last block hash
 * matching finalized hash
-* empty mempool state at the time of capture
+* mempool size of zero in the two responses in the three-node comparison with that field visible
 
 ![NewGen L1 runtime validation](./Screenshot%202026-06-09%20035721.png)
 
-This is one of the core properties NewGen L1 is designed to preserve: independent nodes converging on the same view of chain state and finality.
+An earlier response from Node A in the same screenshot reported height 17,102 and finalized height 17,101.
 
 ---
 
 ### NewGen Client Suite Startup
 
-The NewGen Client Suite was started in wallet mode and configured to use the public RPC endpoint.
+The June capture shows the NewGen Client Suite starting in wallet mode with the official testnet RPC configured as its fallback.
 
 The package initialized successfully and launched its local HTTP interface.
 
@@ -60,10 +54,9 @@ Visible information includes:
 
 * network identity
 * chain reachability
-* current height
-* finalized height
+* chain height **17,189** and finalized height **17,188** at capture
 * genesis fingerprint
-* pending transaction status
+* zero pending transactions at capture
 
 ![Wallet Node live status](./screen.png)
 
@@ -73,7 +66,7 @@ The browser interface reads public chain state only. Transaction signing is perf
 
 ## Earlier Runtime Excerpt
 
-The following sanitized excerpt was collected during an earlier NewGen L1 validation run.
+The following log entries are from an earlier NewGen L1 validation run on 4 May 2026.
 
 Peer identifiers and block hashes have been shortened while preserving the runtime behavior being demonstrated.
 
@@ -93,21 +86,11 @@ ts=1777931940017 level=INFO node=A target=eco.ctrl event=fill_estimation_source 
 ts=1777931941229 level=INFO node=A target=snapshot.export event=snapshot_export_summary node=A bundle_count=2 bundles=bootstrap-latest@height=464,window_from=0,chunks=8,reachable_only=true;checkpoint-latest@height=464,window_from=0,chunks=8,reachable_only=true
 ```
 
-## Current Observations
+<a name="current-observations"></a>
 
-Based on the validation evidence collected so far:
+## Observations from the May and June 2026 tests
 
-* node APIs are reporting convergent runtime state
-* finalized height continues advancing normally
-* matching hashes are observed across participating nodes
-* peer-delivered blocks are being applied successfully
-* snapshot export activity is occurring during runtime
-* the Client Suite can connect to the public RPC endpoint
-* the Wallet Node interface can read live chain state
-
-During the current validation window, NewGen L1 has progressed through thousands of blocks while continuing to expose consistent finalized state across the observed nodes.
-
-Validation is still ongoing, but the current results are encouraging and continue to support the direction of the NewGen L1 architecture.
+The May log records snapshot exports and a node applying blocks received from peers. The June screenshots show three nodes reporting the same tip and finalized block hashes at the recorded height, the client starting, and the wallet reading the testnet state.
 
 ---
 
@@ -117,6 +100,4 @@ This evidence is intentionally partial.
 
 Private infrastructure details, credentials, validator material, wallet material, API tokens, operational runbooks, and other sensitive information are not included.
 
-This document reflects ongoing validation activity. It should not be interpreted as a public mainnet launch announcement, an open validator onboarding notice, or a claim that all runtime validation work is complete.
-
-Additional evidence covering external follower operation, E2 Compute Hub integration, canonical worker projection, compute execution, and evidence finalization will be published separately.
+These observations document private-testnet validation in May and June 2026. The original June note identified external follower operation, E2 Compute Hub integration, canonical worker projection, compute execution, and evidence finalization as topics for further evidence. [Current public status](../status/current-status.md)

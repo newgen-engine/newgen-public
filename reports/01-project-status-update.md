@@ -1,20 +1,18 @@
 # 01 — Project Status Update
 
+> **Historical project report.** This report describes the project status documented on 16 May 2026. The historical NewGen L1 V1 source was published separately on 18 November 2026 under proprietary terms for source inspection.
+>
+> [Current Status](../status/current-status.md) · [V1 source, license and evidence](https://github.com/newgen-engine/newgen-l1-v1/tree/41f6557c45b87c7d9195b84166d4fed2d10077bd)
+
 ## What this report is
 
-This report provides a public-facing status update for the NewGen project.
-
-Its purpose is to describe the current maturity of the project, clarify the present validation phase, and distinguish between what already exists, what is currently being regression-tested, and what is not being claimed yet.
+This report describes what had been built, the regression validation underway and the scope of the project’s public claims in May 2026.
 
 This is a status and positioning document, not a launch announcement.
 
 ## Why this update matters
 
-NewGen is no longer in an early construction phase.
-
-The project has already moved beyond initial system-building and is now in a final regression-validation stage after recent hardening work across follower access, reputation, policy configuration, E2 admission, and packaging.
-
-That matters because current public communication should reflect actual maturity rather than provisional expectations or roadmap claims.
+By May 2026, NewGen had moved beyond initial construction. The project was in final regression validation following hardening work across follower access, reputation, policy configuration, E2 admission, and packaging.
 
 ## Project scope
 
@@ -30,9 +28,11 @@ These ecosystems are connected, but they do not share the same role or the same 
 - **E2 Compute Hub** performs bounded commissioned work and does not promote local execution state to canonical truth on its own.
 - **NewGen AI** provides interaction and bounded orchestration, and is designed to become a future demand layer for the compute ecosystem while remaining constrained by explicit system boundaries and pending final model training.
 
-## Current maturity by ecosystem
+<a name="current-maturity-by-ecosystem"></a>
 
-NewGen does not currently present all three ecosystems as being at the same public-readiness stage.
+## Maturity by ecosystem in May 2026
+
+The three ecosystems were at different stages of public readiness.
 
 ### NewGen L1
 
@@ -47,12 +47,12 @@ Its public-facing role includes:
 - reputation logic
 - explicit authority over what becomes canonical
 
-Current public maturity:
+**Public maturity in May 2026**
 
 - core runtime already built
 - repeatedly tested in local/lab/server environments
 - multi-thousand-block runs already completed internally
-- follower-node access and public-mode behavior currently being regression-tested after recent hardening
+- follower-node access and public-mode behavior under regression validation after hardening
 - not presented as a public mainnet yet
 
 ### E2 Compute Hub
@@ -68,11 +68,11 @@ Its public-facing role includes:
 - L1-based admission boundaries
 - explicit separation from canonical chain authority
 
-Current public maturity:
+**Public maturity in May 2026**
 
-- coordinator/worker flows are built
-- controlled job execution tests have already been completed internally
-- current validation focuses on canonical L1-based worker eligibility, admission, receipts, and job lifecycle behavior
+- coordinator and worker flows had been built
+- controlled job execution tests had been completed internally
+- validation focused on canonical L1-based worker eligibility, admission, receipts, and job lifecycle behavior
 - E2 is not yet presented as a complete public decentralized cloud marketplace.
 
 ### NewGen AI
@@ -94,19 +94,19 @@ Its internal stack already includes foundational proprietary components such as:
 - backend/frontend application layer
 - chat plumbing and application shell
 
-Current public maturity:
+**Public maturity in May 2026**
 
-- backend and frontend application layers are operational in private tests
-- chat plumbing, session/auth/database paths, and application shell have been tested
-- dataset/token preparation and model-building infrastructure are prepared
-- full model training and final answer-quality evaluation remain pending
+- backend and frontend application layers were operational in private tests
+- chat, session, authentication, database, and application shell flows had been tested
+- dataset and token preparation and model-building infrastructure were in place
+- full model training and final answer-quality evaluation were pending
 - NewGen AI is not being presented as a finished public AI model yet
 
-## Current validation phase
+<a name="current-validation-phase"></a>
 
-The current phase is focused on regression validation, not feature expansion.
+## Validation phase in May 2026
 
-The main areas being validated are:
+The project was validating the following areas after the hardening work.
 
 - follower node package and public-mode boot behavior
 - L1 peer stability and local reputation behavior
@@ -115,13 +115,11 @@ The main areas being validated are:
 - AI application shell, backend/frontend flow, and verified fail-closed behavior
 - public documentation alignment
 
-In practical terms, this means the work is now centered on confirming that recent hardening changes did not introduce regressions across already-built systems.
+The purpose was to check for regressions in the systems already built.
 
 ## Communication posture
 
-Current public communication is being aligned around readiness rather than fixed-date promises.
-
-This means public-facing material is being updated to reflect actual maturity, actual scope, and actual exposure posture rather than provisional calendar targets.
+In May 2026, the project was aligning public updates with documented maturity, scope, and availability.
 
 NewGen public material should distinguish clearly between:
 
@@ -146,9 +144,7 @@ This report does not claim:
 
 ## Publication note
 
-Public material released through NewGen public documentation is intentionally filtered.
-
-NewGen will not publish:
+The May 2026 publication policy kept the following material out of the public documentation repository.
 
 - source code
 - private validator/runbook material
@@ -157,4 +153,4 @@ NewGen will not publish:
 - raw logs containing unsafe operational information
 - internal deployment procedures
 
-NewGen publishes only material that is useful, accurate, and safe to disclose.
+The historical L1 V1 source was published in a separate repository on 18 November 2026 under proprietary terms for technical inspection. [Source inspection terms](https://github.com/newgen-engine/newgen-l1-v1/blob/41f6557c45b87c7d9195b84166d4fed2d10077bd/LICENSE.txt)
